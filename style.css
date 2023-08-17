@@ -1,4 +1,5 @@
 :root{
+    --cor-principal: #AA0ABF;
     --laranja: #FA733E;
     --cinza-sombra-botao: #242424;
 }
@@ -10,11 +11,11 @@
 header{
     width: 100%;
     height: 40px;
-    padding: 19px 40px;
+    padding: 19px 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 276px;
+    justify-content: space-between;
+    /*gap: 291px;*/
     flex-shrink: 0;
     background: #FFF;
     box-shadow: 0px 4px 2px 0px rgba(200, 200, 200, 0.25);
@@ -30,10 +31,9 @@ nav{
 #menu-nav{
     display: flex;
     list-style: none;
-    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;  
+    gap: 50px; 
 
 }
 
@@ -41,6 +41,16 @@ nav{
     letter-spacing: 0;
     /*margin-left: 10px;*/
     font-size: 18px;
+}
+
+a {
+    color: var(--cinza-sombra-botao);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:focus{
+    color: var(--cor-principal) ;
 }
 
 button{
