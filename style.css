@@ -62,7 +62,51 @@ button {
   font-weight: 500;
 }
 
-.banner {
+#banner {
   height: 356px;
-  background: var(--cor-primria, #AA0ABF);
+  background: var(--cor-principal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+
+#banner img {
+  height: 149px;
+  width: 580px;
+}
+
+#banner-texto {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  color: #FFF;
+  font-style: italic;
+  font-size: 17px;
+  text-align: center;
+
+}
+
+/*#banner h1 {
+  color: #FFF;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.28px;
+  text-shadow:
+    5px 0 0 var(--cinza-sombra-botao),
+    right
+0 0 0 var(--cinza-sombra-botao),
+top 
+0 0 0 var(--cinza-sombra-botao),
+/*left 
+0 -5px 0 var(--cinza-sombra-botao);
+/*bottom 
+}*/
