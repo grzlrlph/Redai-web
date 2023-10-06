@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro_Redai</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Redaí!</h1>
+    <h4>Vamos começar com o básico</h4>
+    <form action="processa_cadastro.php" method="post">
+        <label for="nome_completo">Nome Completo</label><br>
+        <input type="text" id="nome" name="nome_completo" placeholder="Seu nome completo"><br>
+        <label for="username">Nome de Usuário</label><br>
+        <input type="text" id="username"name="username" placeholder="Seu nome de usuário"><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email"name="email" placeholder="Seu email"><br>
+        <label for="senha">Senha</label><br>
+        <input type="password" id="senha"name="senha" placeholder="Sua senha"><br>
+        <button type="submit" id="cadastrar" value="cadastrar">
+            <img src="imagens/botão cadastrar.png">
+        </button>
+</form>
+    
+</body>
+</html>
