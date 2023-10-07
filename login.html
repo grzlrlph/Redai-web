@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="login.css"> 
+    <link rel="stylesheet" type="text/css" href="css/login.css"> 
     <title>Login</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
-      </style>
+    </style>
 </head>
 <body>
     <div class="content">
@@ -17,15 +17,15 @@
             <p>Entre com o seu e-mail e sua senha</p>
         </div>
 
-        <forms>
+        <form action="back/processa_login.php" method="post">
             <div class="campos">
                 <label for="e-mail" class="label"> E-mail</label> 
-                <input type="text" placeholder="seuemail@gmail.com" id="e-mail" class="inputs">
+                <input type="text" placeholder="seuemail@gmail.com" id="e-mail" name="email" class="inputs">
                 <span class="campo-span"> Digite um e-mail válido</span>
             </div>
             <div class="campos">
                 <label for="senha" class="label"> Senha</label>
-                <input type="password" placeholder="••••••••" id= "senha" class="inputs">
+                <input type="password" placeholder="••••••••" id= "senha" name="senha" class="inputs">
             </div>
             <div class="lembrar-esqueci">
                 <label class="label"> <input type="checkbox"> Lembrar minha senha </label>
@@ -33,7 +33,7 @@
             </div>
             <button type="submit"> Entrar </button>
             <span> </span>
-        </forms>
+        </form>
     </div>
     
 </body>
