@@ -1,25 +1,13 @@
 <?php
- include ('conexao.php');
+    require_once('conexao.php');
 
- if(empty($_POST['email'] || empty($_POST['senha']))){
-    //header ('Location: login.html');
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
- }
-
- $bancoDados = new db();
+    $bancoDados = new db();
 
     $link = $bancoDados-> conecta_mysql();
 
- $email = mysqli_real_escape_string ($link, $_POST['email']);
- $senha = mysqli_real_escape_string ($link, $_POST['senha']);
-
-$query = "SELECT * from usuario where email= '$email' and senha = '$senha'";
-echo query; exit; 
-
-$result = mysqli_query($link, $query);
-
-$row = mysqli_num_rows($result);
-echo $result;
 
 
 

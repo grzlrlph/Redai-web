@@ -1,0 +1,132 @@
+/*
+tablet: 768px até 992px
+Desktop: 992px até 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  main {
+    width: 42vw;
+  }
+
+  .content {
+    width: 42vw;
+    height: 490px;
+  }
+
+  #textos-login {
+    padding: 1.80rem 1.40rem 2rem 1.40rem;
+  }
+
+  #textos-login h3 {
+    font-size: 20px;
+  }
+
+  #textos-login p {
+    font-size: 14px;
+  }
+
+  .inputs {
+    height: 46px;
+  }
+
+  .inputs::placeholder {
+    font-size: 13px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .lembrar-esqueci {
+    padding: 8px 0 8px 0;
+  }
+
+  .lembrar-esqueci label {
+    font-size: 11px;
+  }
+
+  .lembrar-esqueci a {
+    font-size: 11px;
+  }
+
+  form>button[type=submit] {
+    height: 50px;
+    font-size: 15px;
+
+  }
+
+  .botoes-trocar-tela {
+    top: -3%;
+    left: -.2%;
+  }
+
+  .botao-tela-entrar {
+    top: 0%;
+    left: -1%;
+  }
+
+  .botao-tela-cadastrar {
+    top: 0;
+    left: 1%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    width: 467px;
+  }
+
+  .content {
+    width: 467px;
+    height: 516px;
+    padding: 20px 8px 20px 8px;
+  }
+
+  #textos-login {
+    padding: 1.60rem 1.40rem 2.6rem 1.40rem;
+  }
+
+  #textos-login h3 {
+    font-size: 24px;
+  }
+
+  #textos-login p {
+    font-size: 16px;
+  }
+
+  .inputs {
+    height: 54px;
+  }
+
+  .inputs::placeholder {
+    font-size: 14px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .lembrar-esqueci {
+    padding: 18px 0 18px 0;
+  }
+
+  .lembrar-esqueci label {
+    font-size: 14px;
+  }
+
+  .lembrar-esqueci a {
+    font-size: 14px;
+  }
+
+  form>button[type=submit] {
+    height: 60px;
+    font-size: 17px;
+
+  }
+
+  .botoes-trocar-tela {
+    top: -9%;
+    left: -2.2%;
+  }
+
+}

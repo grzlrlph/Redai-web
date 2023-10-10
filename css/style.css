@@ -1,0 +1,154 @@
+:root {
+    --cor-principal: #AA0ABF;
+    --laranja: #FA733E;
+    --cinza-sombra-botao: #242424;
+  }
+  
+  * {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 2%;
+    background: #FFF;
+    box-shadow: 0px 4px 2px 0px rgba(200, 200, 200, 0.25);
+  }
+  
+  #menu-nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0;
+  
+  }
+  
+  #menu-nav li {
+    letter-spacing: 0;
+    /*margin-left: 10px;*/
+    font-size: 18px;
+  }
+  
+  a {
+    color: var(--cinza-sombra-botao);
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:focus {
+    color: var(--cor-principal);
+  }
+  
+  button {
+    width: 148px;
+    height: 48px;
+    padding: 12px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: 3px solid var(--cinza-sombra-botao);
+    background: var(--laranja);
+    box-shadow: -3px 3px 1px var(--cinza-sombra-botao);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  #banner {
+    height: 356px;
+    background: var(--cor-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  #banner img {
+    height: 149px;
+    width: 580px;
+  }
+  
+  #banner-texto {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  p {
+    color: #FFF;
+    font-style: italic;
+    font-size: 17px;
+    text-align: center;
+  
+  }
+  #barra-pesquisa{
+      background: #F9F9F9;
+      border-radius: 2px;
+      border: 3px solid var(--cinza-sombra-botao);
+      box-shadow: -3px 3px 1px var(--cinza-sombra-botao);
+      height: 42px;
+      width: 742px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      position: absolute;
+      right: 50%;
+      transform: translate(50%, -50%);
+  }
+
+  .pesquisa-text{
+    border: 0;
+    outline: 0;
+    background: none;
+    height: 44px;
+    width: 742px;
+    font-size: 14px;
+    
+    }
+
+    #pesquisa-icon{
+      background: #FFD100;
+      
+      padding: 11px;
+      border-radius: 2px;
+      border: 3px solid var(--cinza-sombra-botao);
+    }
+
+    h2{
+      color: var(--cinza-sombra-botao);
+      /*font-family: FONTSPRING DEMO - Balgin;*/
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  /*#banner h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    text-shadow:
+      5px 0 0 var(--cinza-sombra-botao),
+      right
+  0 0 0 var(--cinza-sombra-botao),
+  top 
+  0 0 0 var(--cinza-sombra-botao),
+  /*left 
+  0 -5px 0 var(--cinza-sombra-botao);
+  /*bottom 
+  }*/
+  
