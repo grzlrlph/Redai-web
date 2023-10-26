@@ -4,7 +4,7 @@
 
         private $usuario = 'root';
 
-        private $senha = '';
+        private $senha = '210206gr';
 
         private $database = 'redaidb';
 
