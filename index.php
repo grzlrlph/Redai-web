@@ -1,15 +1,16 @@
 <?php
-session_start();
 
-if(!isset($_SESSION['email'])==true and !isset($_SESSION['senha'])==true){
-  unset($_SESSION['$email']);
-  unset($_SESSION['$senha']);
-  header ('Location: /redai/login.html');
+include_once ('back/verificaSessao.php');
+
+if(session_status() == PHP_SESSION_ACTIVE) {?>
+  <style>
+    .botao{
+      display: none;
+    }
+    </style>
+<?php
 }
-$logado = $_SESSION['email'];
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +44,7 @@ $logado = $_SESSION['email'];
         <li> <a> Sobre </a> </li>
       </ul>
     </nav>
-    <a href="login.html" class="botao"> Entrar </a>
+    <a href="login.html" id="btnEntrar" class="botao"> Entrar </a>
   </header>
 
   <section>
