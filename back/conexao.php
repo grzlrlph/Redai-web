@@ -8,6 +8,8 @@
 
         $database = 'redaidb';
 
+
+        
         $conexao = new mysqli ($host, $usuario, $senha, $database);
 
        /* if ($conexao->connect_error){
