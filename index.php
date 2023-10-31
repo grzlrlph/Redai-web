@@ -1,15 +1,15 @@
 <?php
-
-include_once ('back/verificaSessao.php');
-
-if(session_status() == PHP_SESSION_ACTIVE) {?>
-  <style>
-    .botao{
-      display: none;
-    }
-    </style>
-<?php
+//verifica se uma sessão foi iniciada
+session_start();
+print_r($_SESSION);
+/*if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+{
+    unset($_SESSION['email']);
+    unset($_SESSION['senha']);
+    header('Location: login.html');
 }
+$logado = $_SESSION['email'];*/
+
 ?>
 
 <!DOCTYPE html>
@@ -42,6 +42,7 @@ if(session_status() == PHP_SESSION_ACTIVE) {?>
         <li> <a> Categorias </a> </li>
         <li> <a> Temas </a></li>
         <li> <a> Sobre </a> </li>
+        <li> <a href='telaPerfil.php?username=$_SESSION["usuarioUsername"]' onclick="location.reload();">Atualizar Perfil</a>
       </ul>
     </nav>
     <a href="login.html" id="btnEntrar" class="botao"> Entrar </a>
