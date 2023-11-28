@@ -4,20 +4,18 @@
 
         $usuario = 'root';
 
-        $senha = '210206gr';
+        $senha = '';
 
         $database = 'redaidb';
 
-
-        
         $conexao = new mysqli ($host, $usuario, $senha, $database);
 
-       /* if ($conexao->connect_error){
-            echo "Erro";
-        }else{
-            echo "Conexão efetuada com sucesso";
+    //    if ($conexao->connect_errno){
+    //         echo "Erro";
+    //     }else{
+    //         echo "Conexão efetuada com sucesso";
 
-        }*/
+    //     }
 
 
 ?>
