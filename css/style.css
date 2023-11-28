@@ -42,14 +42,15 @@ a {
   transition: 0.3s;
 }
 
-a:focus {
+a:focus, a.ativa {
   color: var(--cor-principal);
 }
+/* fazer o a:hover para quando o mouse passar em cima */
 
 .botao {
   width: 148px;
   height: 48px;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   border-radius: 2px;
@@ -59,6 +60,42 @@ a:focus {
   color: white;
   font-size: 16px;
   font-weight: 500;
+}
+
+.foto-perfil{
+  border-radius: 9999px;
+  border: 3px solid var(--cinza-sombra-botao);
+  background-color: var(--laranja);
+  box-shadow: -3px 3px 1px var(--cinza-sombra-botao);
+}
+
+.hidden{
+  display: none;
+  
+}
+
+.show{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-\[126px\]{
+  width: 126px;
+}
+
+.foto-perfil-div{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 #banner {
@@ -133,22 +170,3 @@ h2 {
   font-weight: 700;
   line-height: normal;
 }
-
-/*#banner h1 {
-    color: #FFF;
-    text-align: center;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.28px;
-    text-shadow:
-      5px 0 0 var(--cinza-sombra-botao),
-      right
-  0 0 0 var(--cinza-sombra-botao),
-  top 
-  0 0 0 var(--cinza-sombra-botao),
-  /*left 
-  0 -5px 0 var(--cinza-sombra-botao);
-  /*bottom 
-  }*/

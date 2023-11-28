@@ -1,0 +1,215 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+  --cor-principal: #AA0ABF;
+  --laranja: #FA733E;
+  --cinza-sombra: #242424;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection{
+  color: #fff;
+  background: #5372F0;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  margin: 42px 0 42px 116px;
+  margin-top: 42px;
+  margin-left: 116px;
+  gap: 38px;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 596px;
+  background: #fff;
+  border-radius: 2px;
+  padding: 20px 34px 20px 34px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.06);
+  border: 1.6px solid var(--cinza-sombra);
+  /* gap: 32px; */
+}
+.wrapper :where(.title, li, li i, .details){
+  display: flex;
+  align-items: center;
+}
+.title img{
+  max-width: 21px;
+}
+.title h2{
+  font-size: 21px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+.wrapper .content{
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+
+  gap: 22px;
+}
+p{
+  font-size: 12px;
+}
+.content ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7px;
+  margin: 12px 0;
+  border-radius: 2px;
+  border: 2px solid var(--cinza-sombra);
+}
+.content ul  li{
+  color: #333;
+  margin: 4px 3px;
+  list-style: none;
+  border-radius: 5px;
+  background: #F2F2F2;
+  padding: 5px 8px 5px 10px;
+  border: 1px solid #e3e1e1;
+  font-size: 14px;
+}
+.content ul li i{
+  height: 20px;
+  width: 20px;
+  color: #808080;
+  margin-left: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #dfdfdf;
+  justify-content: center;
+}
+.content ul input{
+  flex: 1;
+  padding: 5px;
+  border: none;
+  outline: none;
+  
+}
+.wrapper .details{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details button{
+  /* border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 9px 15px;
+  border-radius: 5px; */
+  background: var(--laranja);
+  transition: background 0.3s ease;
+}
+.details button:hover{
+  background: #2c52ed;
+}
+
+.campos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+textarea{
+  height: 148px;
+  display: flex;
+  padding: 15px 9px;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 10px;
+  outline: none;
+  border-radius: 2px;
+  border: 2px solid var(--cinza-sombra);
+  transition: .3s;
+}
+
+textarea:focus{
+  border-color: var(--cor-principal);
+
+}
+.inputs {
+  display: flex;
+  padding: 15px 9px;
+  height: 40px;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 10px;
+  outline: none;
+  border-radius: 2px;
+  border: 2px solid var(--cinza-sombra);
+  transition: .3s;
+}
+
+
+.inputs:focus {
+  border-color: var(--cor-principal);
+
+}
+
+.label {
+  font-size: 14px;
+}
+
+button {
+  display: flex;
+  /*width: 100px;*/
+  height: 44px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: 500;
+  border-radius: 2px;
+  border: 3px solid var(--cinza-sombra);
+  box-shadow: -3px 3px 1px var(--cinza-sombra);
+}
+
+.laranja{
+  background: var(--laranja);
+}
+
+.cor-principal{
+  background: var(--cor-principal);
+}
+
+h2 {
+  color: var(--cinza-sombra-botao);
+  /*font-family: FONTSPRING DEMO - Balgin;*/
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.div-btn-enviar-foto{
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  
+}
+
+.div-btn-publicar{
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
