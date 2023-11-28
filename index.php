@@ -1,51 +1,16 @@
 <?php
 
-include_once ('back/verificaSessao.php');
-
-if(session_status() == PHP_SESSION_ACTIVE) {?>
-  <style>
-    .botao{
-      display: none;
-    }
-    </style>
-<?php
-}
+  //include_once ('back/verificaSessao.php');
+  // session_start();
+  
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Redaí</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-  <header>
-    <div>
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21 11H3V13H21V11Z" fill="#242424" />
-        <path d="M21 6H3V8H21V6Z" fill="#242424" />
-        <path d="M21 16H3V18H21V16Z" fill="#242424" />
-      </svg>
-    </div>
-    <nav>
-      <ul id="menu-nav">
-        <li> <a href="#"> Home </a></li>
-        <li> <a> Categorias </a> </li>
-        <li> <a> Temas </a></li>
-        <li> <a> Sobre </a> </li>
-      </ul>
-    </nav>
-    <a href="login.html" id="btnEntrar" class="botao"> Entrar </a>
-  </header>
+<?php
+session_start();
+//print_r($_SESSION);
+$caminho_css = "css/style.css";
+include 'header.php';
+?>
 
   <section>
     <div id="banner">
@@ -55,7 +20,7 @@ if(session_status() == PHP_SESSION_ACTIVE) {?>
         <img src="imagens/texto principal.png" alt="titulo">
         <p> “O sucesso é a soma de pequenos esforços </br> repetidos dia após dia.”</p>
       </div>
-      <img src="imagens/doodle-da-direita.png" alt="doodles">
+      <img src="imagens/doodle-da-direita.png" alt="doodles" width="270.64px";>
     </div>
 
     <div id="barra-pesquisa">
@@ -77,6 +42,7 @@ if(session_status() == PHP_SESSION_ACTIVE) {?>
 
   <section>
     <h2>Posts recentes</h2>
+    <a href="cadastro_post.php" class="botao"> + </a>
   </section>
 
   <section>

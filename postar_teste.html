@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/cadastro_post.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css">
+</head>
+<body>
+
+   <section class="section">
+        <div>
+        <h2> Novo Post</h2>
+        </div>
+
+        <div class="content">
+            <form method="POST">
+                <div class="campos">
+                    <label for="titulo" class="label"> Título </label>
+                    <input type="text" name="titulo" class="inputs">
+                </div>
+
+                <div class="campos">
+                    <label for="conteudo" class="label"> Conteúdo </label>
+                    <textarea name="conteudo" rows="28" cols="60"> </textarea>
+                </div>
+
+                <div class="tags-box">
+                    <label for="tags" class="label"> Tags</label>
+                    <ul>
+                        <input type="text" name="tags">
+                    </ul>
+                </div>
+
+                 <button type="submit" id="cadastrar" name="submit" value="enviar_foto" class="laranja"> Enviar foto
+                </button> 
+                <button type="submit" id="cadastrar" name="submit" value="publicar" class="cor-principal"> Publicar
+                </button>
+            </form>
+        </div>
+    </section>
+    <script src="script-tags.js"> </script>
+</body>
+</html>
